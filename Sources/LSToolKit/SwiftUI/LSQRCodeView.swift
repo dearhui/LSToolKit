@@ -64,10 +64,10 @@ public struct LSQRCodeView: View {
 struct LSQRCodeView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            LSQRCodeView(qrString: .constant("124214"), type: .barcode128)
+            LSQRCodeView(qrString: .constant("123456789"), type: .barcode128)
                 .frame(width: 200, height: 50)
             
-            LSQRCodeView(qrString: .constant("124214"), type: .qrCode)
+            LSQRCodeView(qrString: .constant("123456789"), type: .qrCode)
                 .frame(width: 200, height: 200)
         }
     }
