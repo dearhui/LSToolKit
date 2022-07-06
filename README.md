@@ -35,3 +35,4 @@ VStack {
                                           hPadding: 50))
 }
 ```
+![alt text](https://github.com/dearhui/LSToolKit/blob/3453d37705084fd8020d7a20e4939a28b28bea75/images/capsulebutton.png?raw=true)
