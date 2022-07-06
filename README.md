@@ -13,4 +13,4 @@ LSQRCodeView(qrString: $codeString, type: .barcode128)
 LSQRCodeView(qrString: $codeString, type: .qrCode)
     .frame(width: 200, height: 200)
 ```
-![alt text](https://github.com/dearhui/LSToolKit/blob/b7fb2292aa3d2309c8bc31dad506506598e5124d/images/LSQRCodeViewScreenShot.png?raw=true)
+![alt text](https://github.com/dearhui/LSToolKit/blob/14a7b1acbcd446ced8c781a219e3d5367ff5d261/images/LSQRCodeViewScreenShot.png?raw=true)
