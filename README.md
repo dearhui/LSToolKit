@@ -18,12 +18,20 @@ LSQRCodeView(qrString: $codeString, type: .qrCode)
 ### LXCapsuleButtonModifier
 橢圓型按鈕
 ```swift
-Text("Hello, World!")
-    .modifier(LXCapsuleButtonModifier(color: .green,
-                                      size: 20,
-                                      weight: .black,
-                                      boder: true,
-                                      boderWidth: 2,
-                                      vPadding: 10,
-                                      hPadding: 50))
+VStack {
+    Text("Hello, World!")
+        .modifier(LXCapsuleButtonModifier(color: .accentColor, boder: true))
+    Text("Hello, World!")
+        .modifier(LXCapsuleButtonModifier(color: .red, boder: false))
+    Text("Hello, World!")
+        .modifier(LXCapsuleButtonModifier(color: .red, boder: true))
+    Text("Hello, World!")
+        .modifier(LXCapsuleButtonModifier(color: .green,
+                                          size: 20,
+                                          weight: .black,
+                                          boder: true,
+                                          boderWidth: 2,
+                                          vPadding: 10,
+                                          hPadding: 50))
+}
 ```
