@@ -12,14 +12,14 @@ public struct LXCustomContainer<T, Content: View, InitContent: View, ErrContent:
     var state: LXState<T>
     var content: (T) -> Content
     var initContent: () -> InitContent
-    var errContent: (LXError) -> ErrContent
+    var errContent: (Error) -> ErrContent
     var emptyContent: () -> EmptyContent
     var loadingContent: () -> LoadingContent
 
     public init(state: LXState<T>,
          content: @escaping (T) -> Content,
          initContent: @escaping () -> InitContent,
-         errContent: @escaping (LXError) -> ErrContent,
+         errContent: @escaping (Error) -> ErrContent,
          emptyContent: @escaping () -> EmptyContent,
          loadingContent: @escaping () -> LoadingContent) {
         self.state = state

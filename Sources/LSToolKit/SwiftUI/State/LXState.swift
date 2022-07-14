@@ -11,7 +11,7 @@ public enum LXState<T> {
     case initial
     case loading
     case finish(data: T)
-    case error(error: LXError)
+    case error(error: Error)
     case empty
     
     public var isFinish: T? {
@@ -35,7 +35,7 @@ public enum LXState<T> {
         return false
     }
     
-    public var isError: LXError? {
+    public var isError: Error? {
         if case let .error(e) = self {
             return e
         }
