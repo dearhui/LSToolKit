@@ -32,4 +32,22 @@ extension Color {
             opacity: Double(a) / 255
         )
     }
+    
+    public static let grayF2 = Color(hex: "#F2F2F2")
+    public static let gray100 = Color(hex: "#F4F4F5")
+    public static let gray200 = Color(hex: "#E5E5E5")
+    public static let gray300 = Color(hex: "#D4D4D8")
+    public static let gray400 = Color(hex: "#A1A1AA")
+    public static let gray500 = Color(hex: "#71717A")
+    public static let gray600 = Color(hex: "#52525B")
+    public static let gray700 = Color(hex: "#3F3F46")
+    public static let gray800 = Color(hex: "#27272A")
+    
+    public static let green100 = Color(hex: "#DCFCE7")
+    public static let green200 = Color(hex: "#5AD91E")
+    public static let green500 = Color(hex: "#22C55E")
+    
+    public static let rose200 = Color(hex: "#FECDD3")
+    public static let rose500 = Color(hex: "#F43F51")
+    public static let redWrong = Color(hex: "#FF5858")
 }
