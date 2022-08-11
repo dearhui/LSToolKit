@@ -45,7 +45,7 @@ public struct LSSecureField: View {
                     .frame(width: titleWidth, alignment: .leading)
             }
             
-            ZStack {
+            Group {
                 if isSecured {
                     SecureField(placeholder, text: $text)
                 } else {
@@ -55,7 +55,7 @@ public struct LSSecureField: View {
             .font(.system(size: 16))
             .autocapitalization(.none)
             .disableAutocorrection(true)
-            
+            .minimumScaleFactor(0.5)
             
             Button(action: {
                 isSecured.toggle()
