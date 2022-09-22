@@ -8,10 +8,16 @@
 import SwiftUI
 
 public struct LXGreedyButton: ButtonStyle {
+    
+    public init(textColor: Color = .white, backgroundColor: Color = .accentColor) {
+        self.textColor = textColor
+        self.backgroundColor = backgroundColor
+    }
+    
     @Environment(\.isEnabled) private var isEnabled: Bool
     
-    public var textColor: Color = .white
-    public var backgroundColor: Color = .accentColor
+    private var textColor: Color
+    private var backgroundColor: Color
     
     public func makeBody(configuration: Configuration) -> some View {
         configuration.label
