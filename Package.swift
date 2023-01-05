@@ -26,7 +26,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "LSToolKit",
-            dependencies: ["SDWebImageSwiftUI", .product(name: "PureSwiftUI", package: "pure-swift-ui")]),
+            dependencies: ["SDWebImageSwiftUI",
+                .product(name: "PureSwiftUI", package: "pure-swift-ui")
+            ]),
         .testTarget(
             name: "LSToolKitTests",
             dependencies: ["LSToolKit"]),
