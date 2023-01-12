@@ -26,7 +26,9 @@ public struct LXCountryCodeField: View {
                 .frame(width: 10, height: 6)
         }
         .padding()
-        .modifier(LSfieldBackgroundModifier())
+        .backgroundColor(Color(UIColor.secondarySystemBackground))
+        .clipRoundedRectangle(8)
+//        .modifier(LSfieldBackgroundModifier())
     }
 }
 

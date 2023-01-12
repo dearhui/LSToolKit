@@ -12,3 +12,6 @@
 "Camera" = "Camera";
 "Cancel Selection" = "Cancel Selection";
 "Cancel" = "Cancel";
+
+// alert
+"button_alert_ok" = "OK";
