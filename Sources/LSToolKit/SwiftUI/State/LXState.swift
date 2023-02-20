@@ -41,4 +41,11 @@ public enum LXState<T> {
         }
         return nil
     }
+    
+    public var isInitial: Bool {
+        if case .initial = self {
+            return true
+        }
+        return false
+    }
 }

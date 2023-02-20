@@ -69,14 +69,14 @@ public class TaiwanIDGenerator {
     }
 }
 
-extension String {
-    fileprivate static func randomDigit(ofLength length: Int) -> String {
-        guard length > 0 else { return "" }
-        let base = "0123456789"
-        var randomString = ""
-        for _ in 1...length {
-            randomString.append(base.randomElement()!)
-        }
-        return randomString
-    }
-}
+//extension String {
+//    fileprivate static func randomDigit(ofLength length: Int) -> String {
+//        guard length > 0 else { return "" }
+//        let base = "0123456789"
+//        var randomString = ""
+//        for _ in 1...length {
+//            randomString.append(base.randomElement()!)
+//        }
+//        return randomString
+//    }
+//}

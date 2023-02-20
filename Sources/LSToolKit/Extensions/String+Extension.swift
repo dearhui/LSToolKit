@@ -44,4 +44,21 @@ extension String {
     public func isVersionSupported(support: String) -> Bool {
         return !(self.versionCompare(support) == .orderedAscending)
     }
+    
+    public static func randomDigit(ofLength length: Int) -> String {
+        guard length > 0 else { return "" }
+        let base = "0123456789"
+        var randomString = ""
+        for _ in 1...length {
+            randomString.append(base.randomElement()!)
+        }
+        return randomString
+    }
+}
+
+extension String {
+    public var isUUID: Bool {
+        let regex = try! NSRegularExpression(pattern: "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")
+        return regex.firstMatch(in: self, range: NSRange(location: 0, length: self.utf16.count)) != nil
+    }
 }
