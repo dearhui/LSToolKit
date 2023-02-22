@@ -30,6 +30,6 @@ let package = Package(
             dependencies: ["SDWebImageSwiftUI", .product(name: "PureSwiftUI", package: "pure-swift-ui"), "RSBarcodes_Swift"]),
         .testTarget(
             name: "LSToolKitTests",
-            dependencies: ["LSToolKit"]),
+            dependencies: ["LSToolKit", "SDWebImageSwiftUI", .product(name: "PureSwiftUI", package: "pure-swift-ui"), "RSBarcodes_Swift"]),
     ]
 )

@@ -19,6 +19,15 @@
       }
     },
     {
+      "identity" : "rsbarcodes_swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yeahdongcn/RSBarcodes_Swift",
+      "state" : {
+        "revision" : "86d8b1a1439e7edb19793d17732b15fd784a0a15",
+        "version" : "5.1.1"
+      }
+    },
+    {
       "identity" : "sdwebimage",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SDWebImage/SDWebImage.git",
