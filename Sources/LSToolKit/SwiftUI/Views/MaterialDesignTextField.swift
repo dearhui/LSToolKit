@@ -8,7 +8,7 @@
 import SwiftUI
 import PureSwiftUI
 
-public struct MaterialDesignTextField2: View {
+public struct MaterialDesignTextField: View {
     @Environment(\.isEnabled) private var isEnabled
     
     private let name: LocalizedStringKey
@@ -122,28 +122,28 @@ public struct MaterialDesignTextField2: View {
 struct MaterialDesignTextField_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            MaterialDesignTextField2(name: "register_nick_name",
+            MaterialDesignTextField(name: "register_nick_name",
                                      value: .constant(""),
                                      hint: "register_nick_name_hint",
                                      verified: true,
                                      focused: false)
-            MaterialDesignTextField2(name: "register_nick_name",
+            MaterialDesignTextField(name: "register_nick_name",
                                      value: .constant("disabled true"),
                                      hint: "register_nick_name_hint",
                                      verified: true,
                                      focused: false)
             .disabled(true)
-            MaterialDesignTextField2(name: "register_nick_name",
+            MaterialDesignTextField(name: "register_nick_name",
                                      value: .constant("123"),
                                      hint: "register_nick_name_hint",
                                      verified: true,
                                      focused: true)
-            MaterialDesignTextField2(name: "register_nick_name",
+            MaterialDesignTextField(name: "register_nick_name",
                                      value: .constant("123"),
                                      hint: "register_nick_name_hint",
                                      verified: false,
                                      focused: false)
-            MaterialDesignTextField2(name: "密碼",
+            MaterialDesignTextField(name: "密碼",
                                      value: .constant("123"), isSecure: true,
                                      hint: "register_nick_name_hint",
                                      verified: false,
