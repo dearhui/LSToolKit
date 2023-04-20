@@ -90,7 +90,7 @@ public struct MaterialDesignTextField: View {
         RoundedRectangle(cornerRadius: 8)
             .strokeBorder(_verified ? Color.clear : Color(UIColor.systemPink))
             .background(
-                Color(.secondarySystemFill)
+                Color(UIColor.secondarySystemBackground)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
             )
     }
