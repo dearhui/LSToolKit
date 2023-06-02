@@ -97,12 +97,13 @@ public struct MaterialDesignTextField: View {
     
     @ViewBuilder
     private var hintView: some View {
-        if (focused || !_verified), let hint = hint {
+        if let hint = hint {
             Text(hint)
                 .font(.caption)
                 .greedyWidth(.leading)
                 .padding(.horizontal)
                 .foregroundColor(_verified ? Color(UIColor.secondaryLabel) : Color(UIColor.systemPink))
+                .opacity( (focused || !_verified) ? 1 : 0)
         }
     }
     
