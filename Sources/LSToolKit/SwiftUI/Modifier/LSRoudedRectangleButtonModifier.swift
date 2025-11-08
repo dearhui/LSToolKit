@@ -11,9 +11,9 @@ public struct LSRoudedRectangleButtonModifier: ViewModifier {
     
     var font: Color = .white
     var boder: Color = .clear
-    var background: Color = .accentColor
+    var background: Color = Color(UIColor.systemBlue)
 
-    public init(font: Color = .white, boder: Color = .clear, background: Color = .accentColor) {
+    public init(font: Color = .white, boder: Color = .clear, background: Color = Color(UIColor.systemBlue)) {
         self.font = font
         self.boder = boder
         self.background = background
@@ -45,7 +45,7 @@ struct LSModifyPreview: PreviewProvider {
                 .modifier(LSRoudedRectangleButtonModifier())
             
             Text("Hello World")
-                .modifier(LSRoudedRectangleButtonModifier(font: .accentColor,
+                .modifier(LSRoudedRectangleButtonModifier(font: Color(UIColor.systemBlue),
                                                           background: .white))
             
             Text("Hello World")

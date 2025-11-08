@@ -10,28 +10,31 @@ import PureSwiftUI
 
 public struct MaterialDesignTextField: View {
     @Environment(\.isEnabled) private var isEnabled
-    
+
     private let name: LocalizedStringKey
     private let hint: LocalizedStringKey?
     @Binding private var value: String
     private let isSecure: Bool
     private let verified: Bool
     private let focused: Bool
-    
+    private let accentColor: Color
+
     @State private var mySecure: Bool
-    
+
     public init(name: LocalizedStringKey,
                 value: Binding<String>,
                 isSecure: Bool = false,
                 hint: LocalizedStringKey? = nil,
                 verified: Bool = true,
-                focused: Bool = false) {
+                focused: Bool = false,
+                accentColor: Color = Color(UIColor.systemBlue)) {
         self.name = name
         self.hint = hint
         self._value = value
         self.isSecure = isSecure
         self.verified = verified
         self.focused = focused
+        self.accentColor = accentColor
         self._mySecure = State(wrappedValue: isSecure)
     }
     
@@ -82,7 +85,7 @@ public struct MaterialDesignTextField: View {
             .greedyWidth(.leading)
             .font(isMini ? .caption : .body)
             .yOffsetIf(isMini, -12)
-            .foregroundColor(isMini ? .accentColor : Color(UIColor.placeholderText))
+            .foregroundColor(isMini ? accentColor : Color(UIColor.placeholderText))
             .zIndex(-1)
     }
     

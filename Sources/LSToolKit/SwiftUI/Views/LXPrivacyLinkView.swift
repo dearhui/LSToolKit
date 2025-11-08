@@ -12,7 +12,7 @@ import UIKit
 // 使用者條款與隱私權政策連結
 public struct LXPrivacyLinkItem {
     public init(textColor: Color = Color(UIColor.secondaryLabel),
-                linkColor: Color = .accentColor,
+                linkColor: Color = Color(UIColor.systemBlue),
                 checkedColor: Color = .green,
                 keyHaveRead: LocalizedStringKey = "本人已詳閱",
                 keyTerms: LocalizedStringKey = "使用者條款",

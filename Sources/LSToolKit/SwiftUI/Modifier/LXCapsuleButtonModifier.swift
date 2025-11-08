@@ -74,7 +74,7 @@ public struct LSCapsuleButtonModifier: ViewModifier {
          weight: Font.Weight = .black,
          width: CGFloat = 52,
          height: CGFloat = 32,
-         color: Color = .accentColor,
+         color: Color = Color(UIColor.systemBlue),
          fontColor: Color = .white) {
         self.size = size
         self.weight = weight
@@ -98,7 +98,7 @@ struct LXCapsuleButtonModifierDemo: View {
     var body: some View {
         VStack {
             Text("Hello, World!")
-                .modifier(LXCapsuleButtonModifier(color: .accentColor, boder: true))
+                .modifier(LXCapsuleButtonModifier(color: Color(UIColor.systemBlue), boder: true))
             Text("Hello, World!")
                 .modifier(LXCapsuleButtonModifier(color: .red, boder: false))
             Text("Hello, World!")

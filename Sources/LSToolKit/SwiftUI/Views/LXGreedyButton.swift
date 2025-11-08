@@ -9,7 +9,7 @@ import SwiftUI
 
 public struct LXGreedyButton: ButtonStyle {
     
-    public init(textColor: Color = .white, backgroundColor: Color = .accentColor) {
+    public init(textColor: Color = .white, backgroundColor: Color = Color(UIColor.systemBlue)) {
         self.textColor = textColor
         self.backgroundColor = backgroundColor
     }

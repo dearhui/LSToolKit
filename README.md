@@ -20,7 +20,7 @@ LSQRCodeView(qrString: $codeString, type: .qrCode)
 ```swift
 VStack {
     Text("Hello, World!")
-        .modifier(LXCapsuleButtonModifier(color: .accentColor, boder: true))
+        .modifier(LXCapsuleButtonModifier(color: Color(UIColor.systemBlue), boder: true))
     Text("Hello, World!")
         .modifier(LXCapsuleButtonModifier(color: .red, boder: false))
     Text("Hello, World!")
